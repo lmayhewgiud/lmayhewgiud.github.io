@@ -1,0 +1,15 @@
+<html>
+    <head><title>Sign in</title>
+        </head>
+        <body>
+        <script>
+            const str = window.location.hash;
+            var dec = str.substr(1);
+            var hash = window.atob(dec);
+            if(hash.length){
+                window.location.href = hash
+            }
+        </script> 
+        
+    </body>
+</html>
